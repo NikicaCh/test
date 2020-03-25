@@ -1,0 +1,165 @@
+[debug] [2020-03-25T12:12:02.824Z] ----------------------------------------------------------------------
+[debug] [2020-03-25T12:12:02.825Z] Command:       E:\Program Files\Node\node.exe C:\Users\nikic\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only functions,hosting
+[debug] [2020-03-25T12:12:02.826Z] CLI Version:   7.15.1
+[debug] [2020-03-25T12:12:02.826Z] Platform:      win32
+[debug] [2020-03-25T12:12:02.826Z] Node Version:  v12.13.0
+[debug] [2020-03-25T12:12:02.827Z] Time:          Wed Mar 25 2020 13:12:02 GMT+0100 (Central European Standard Time)
+[debug] [2020-03-25T12:12:02.827Z] ----------------------------------------------------------------------
+[debug] [2020-03-25T12:12:02.827Z] 
+[debug] [2020-03-25T12:12:02.832Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-03-25T12:12:02.833Z] > authorizing via signed-in user
+[debug] [2020-03-25T12:12:02.833Z] [iam] checking project server-bd05a for permissions ["firebase.projects.get"]
+[debug] [2020-03-25T12:12:02.834Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/server-bd05a:testIamPermissions  
+
+[debug] [2020-03-25T12:12:03.956Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-25T12:12:03.958Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/server-bd05a  
+ 
+[debug] [2020-03-25T12:12:04.432Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-25T12:12:04.434Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/server-bd05a/webApps/-/config  
+ 
+[debug] [2020-03-25T12:12:05.283Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[warn] !  Your requested "node" version "8" doesn't match your global version "12"
+[info] +  functions: functions emulator started at http://localhost:5001
+[info] i  functions: Watching "C:\Users\nikic\Desktop\projects\server\functions" for Cloud Functions...
+[debug] [2020-03-25T12:12:06.453Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-25T12:12:06.453Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-03-25T12:12:06.453Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-25T12:12:06.453Z] [worker-~diagnostic~-4a00cb06-006e-4beb-87b6-d09db07ebe79]: Assigning socketPath: \\?\pipe\C:\Users\nikic\Desktop\projects\server\functions\2592
+[debug] [2020-03-25T12:12:06.453Z] [worker-~diagnostic~-4a00cb06-006e-4beb-87b6-d09db07ebe79]: BUSY
+[debug] [2020-03-25T12:12:06.704Z] [runtime-status] [2592] Functions runtime initialized. {"cwd":"C:\\Users\\nikic\\Desktop\\projects\\server\\functions","node_version":"12.13.0"}
+[debug] [2020-03-25T12:12:06.704Z] [runtime-status] [2592] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-25T12:12:06.706Z] [runtime-status] [2592] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\Users\\nikic\\Desktop\\projects\\server\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-25T12:12:06.708Z] [runtime-status] [2592] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\Users\\nikic\\Desktop\\projects\\server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-03-25T12:12:06.708Z] [runtime-status] [2592] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\Users\\nikic\\Desktop\\projects\\server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  Error: Cannot find module 'html-pdf'
+Require stack:
+- C:\Users\nikic\Desktop\projects\server\functions\index.js
+- C:\Users\nikic\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:794:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:687:27)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\nikic\Desktop\projects\server\functions\index.js:5:13)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-03-25T12:12:06.841Z] [worker-~diagnostic~-4a00cb06-006e-4beb-87b6-d09db07ebe79]: exited
+[debug] [2020-03-25T12:12:06.841Z] [worker-~diagnostic~-4a00cb06-006e-4beb-87b6-d09db07ebe79]: FINISHED
+[info] [hosting] Rewriting /hello to http://localhost:5001/server-bd05a/us-central1/app for local Function app
+[debug] [2020-03-25T12:12:08.880Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-25T12:12:08.881Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-25T12:12:08.881Z] Accepted request GET /server-bd05a/us-central1/app/hello --> app
+[debug] [2020-03-25T12:12:08.881Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-03-25T12:12:08.885Z] [worker-pool] addWorker(app)
+[debug] [2020-03-25T12:12:08.885Z] [worker-pool] Adding worker with key app, total=1
+[debug] [2020-03-25T12:12:08.885Z] [worker-pool] submitWork(triggerId=app)
+[debug] [2020-03-25T12:12:08.885Z] [worker-app-a26f0ca4-4e3d-4b00-b5f5-e72cc7f90a77]: Assigning socketPath: \\?\pipe\C:\Users\nikic\Desktop\projects\server\functions\3332
+[debug] [2020-03-25T12:12:08.885Z] [worker-app-a26f0ca4-4e3d-4b00-b5f5-e72cc7f90a77]: BUSY
+[debug] [2020-03-25T12:12:09.142Z] [runtime-status] [3332] Functions runtime initialized. {"cwd":"C:\\Users\\nikic\\Desktop\\projects\\server\\functions","node_version":"12.13.0"}
+[debug] [2020-03-25T12:12:09.143Z] [runtime-status] [3332] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-25T12:12:09.145Z] [runtime-status] [3332] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\Users\\nikic\\Desktop\\projects\\server\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-25T12:12:09.146Z] [runtime-status] [3332] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\Users\\nikic\\Desktop\\projects\\server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-03-25T12:12:09.147Z] [runtime-status] [3332] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\Users\\nikic\\Desktop\\projects\\server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  Error: Cannot find module 'html-pdf'
+Require stack:
+- C:\Users\nikic\Desktop\projects\server\functions\index.js
+- C:\Users\nikic\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:794:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:687:27)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\nikic\Desktop\projects\server\functions\index.js:5:13)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-03-25T12:12:09.275Z] [worker-app-a26f0ca4-4e3d-4b00-b5f5-e72cc7f90a77]: exited
+[debug] [2020-03-25T12:12:09.275Z] [worker-app-a26f0ca4-4e3d-4b00-b5f5-e72cc7f90a77]: FINISHED
+[debug] [2020-03-25T12:12:56.649Z] ----------------------------------------------------------------------
+[debug] [2020-03-25T12:12:56.650Z] Command:       E:\Program Files\Node\node.exe C:\Users\nikic\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only functions,hosting
+[debug] [2020-03-25T12:12:56.651Z] CLI Version:   7.15.1
+[debug] [2020-03-25T12:12:56.651Z] Platform:      win32
+[debug] [2020-03-25T12:12:56.651Z] Node Version:  v12.13.0
+[debug] [2020-03-25T12:12:56.652Z] Time:          Wed Mar 25 2020 13:12:56 GMT+0100 (Central European Standard Time)
+[debug] [2020-03-25T12:12:56.652Z] ----------------------------------------------------------------------
+[debug] [2020-03-25T12:12:56.652Z] 
+[debug] [2020-03-25T12:12:56.658Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-03-25T12:12:56.658Z] > authorizing via signed-in user
+[debug] [2020-03-25T12:12:56.658Z] [iam] checking project server-bd05a for permissions ["firebase.projects.get"]
+[debug] [2020-03-25T12:12:56.659Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/server-bd05a:testIamPermissions  
+
+[debug] [2020-03-25T12:12:57.782Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-25T12:12:57.784Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/server-bd05a  
+ 
+[debug] [2020-03-25T12:12:58.149Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-25T12:12:58.154Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/server-bd05a/webApps/-/config  
+ 
+[debug] [2020-03-25T12:12:58.993Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[warn] !  Your requested "node" version "8" doesn't match your global version "12"
+[info] +  functions: functions emulator started at http://localhost:5001
+[info] i  functions: Watching "C:\Users\nikic\Desktop\projects\server\functions" for Cloud Functions...
+[debug] [2020-03-25T12:13:00.176Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-25T12:13:00.176Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-03-25T12:13:00.176Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-25T12:13:00.176Z] [worker-~diagnostic~-9486663c-e1fa-4346-b81f-5fc24b34057e]: Assigning socketPath: \\?\pipe\C:\Users\nikic\Desktop\projects\server\functions\7428
+[debug] [2020-03-25T12:13:00.177Z] [worker-~diagnostic~-9486663c-e1fa-4346-b81f-5fc24b34057e]: BUSY
+[debug] [2020-03-25T12:13:00.424Z] [runtime-status] [7428] Functions runtime initialized. {"cwd":"C:\\Users\\nikic\\Desktop\\projects\\server\\functions","node_version":"12.13.0"}
+[debug] [2020-03-25T12:13:00.424Z] [runtime-status] [7428] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-25T12:13:00.426Z] [runtime-status] [7428] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\Users\\nikic\\Desktop\\projects\\server\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-25T12:13:00.428Z] [runtime-status] [7428] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\Users\\nikic\\Desktop\\projects\\server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-03-25T12:13:00.428Z] [runtime-status] [7428] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\Users\\nikic\\Desktop\\projects\\server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  Error: Cannot find module 'html-pdf'
+Require stack:
+- C:\Users\nikic\Desktop\projects\server\functions\index.js
+- C:\Users\nikic\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:794:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:687:27)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\nikic\Desktop\projects\server\functions\index.js:5:13)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-03-25T12:13:00.556Z] [worker-~diagnostic~-9486663c-e1fa-4346-b81f-5fc24b34057e]: exited
+[debug] [2020-03-25T12:13:00.556Z] [worker-~diagnostic~-9486663c-e1fa-4346-b81f-5fc24b34057e]: FINISHED
+[debug] [2020-03-25T12:13:21.191Z] File C:\Users\nikic\Desktop\projects\server\functions\package.json changed, reloading triggers
+[debug] [2020-03-25T12:13:22.193Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-03-25T12:13:22.195Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-25T12:13:22.196Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-03-25T12:13:22.196Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-25T12:13:22.196Z] [worker-~diagnostic~-60647599-81b7-4f29-99ab-bf9388f7cf16]: Assigning socketPath: \\?\pipe\C:\Users\nikic\Desktop\projects\server\functions\13212
+[debug] [2020-03-25T12:13:22.196Z] [worker-~diagnostic~-60647599-81b7-4f29-99ab-bf9388f7cf16]: BUSY
+[debug] [2020-03-25T12:13:22.456Z] [runtime-status] [13212] Functions runtime initialized. {"cwd":"C:\\Users\\nikic\\Desktop\\projects\\server\\functions","node_version":"12.13.0"}
+[debug] [2020-03-25T12:13:22.456Z] [runtime-status] [13212] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-25T12:13:22.459Z] [runtime-status] [13212] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\Users\\nikic\\Desktop\\projects\\server\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-25T12:13:22.460Z] [runtime-status] [13212] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\Users\\nikic\\Desktop\\projects\\server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-03-25T12:13:22.461Z] [runtime-status] [13212] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"C:\\Users\\nikic\\Desktop\\projects\\server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  Error: Cannot find module 'html-pdf'
+Require stack:
+- C:\Users\nikic\Desktop\projects\server\functions\index.js
+- C:\Users\nikic\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:794:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:687:27)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\nikic\Desktop\projects\server\functions\index.js:5:13)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-03-25T12:13:22.592Z] [worker-~diagnostic~-60647599-81b7-4f29-99ab-bf9388f7cf16]: exited
+[debug] [2020-03-25T12:13:22.592Z] [worker-~diagnostic~-60647599-81b7-4f29-99ab-bf9388f7cf16]: FINISHED
